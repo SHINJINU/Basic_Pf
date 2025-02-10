@@ -1,0 +1,48 @@
+.header {
+}
+
+.header .hd_wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 80px;
+  align-items: center;
+}
+
+.header .hd_wrap h1 img {
+  height: 24px;
+}
+
+.header .gnb {
+}
+
+.header .gnb > ul {
+  display: flex;
+  gap: 30px;
+}
+
+.main_visual {
+  position: relative;
+  background: url(../images/main_visual01.jpg) no-repeat center center/cover;
+  height: 640px;
+}
+
+.main_visual .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #000;
+  font-size: 24px;
+
+  max-width: 1170px;
+  width: 100%;
+}
+
+.main_visual::before .title {
+  content: "";
+  position: absolute;
+  inset: 0 0 0 0;
+  opacity: 0.75;
+}
